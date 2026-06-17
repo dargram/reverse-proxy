@@ -18,7 +18,7 @@ A lightweight reverse proxy built with **Quart** and **httpx** that forwards req
 Install dependencies:
 
 ```bash
-pip install quart httpx
+pip3 install quart httpx
 ```
 
 ## Configuration
@@ -59,15 +59,6 @@ Client → Reverse Proxy (Quart + httpx) → Target Site
 2. The proxy (partially) encrypts the data
 3. The request is forwarded to the configured target site
 4. The response is returned back to the client
-
-## Project Structure
-
-```
-reverse-proxy/
-├── start           # Startup script
-├── config.json     # Target site configuration
-└── ...
-```
 
 ## License
 
